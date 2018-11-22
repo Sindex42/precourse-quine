@@ -1,0 +1,37 @@
+Line by line explanation
+
+  puts <<2*2,2
+  puts <<2*2,2
+  2
+
+# 1st line
+
+puts <<2
+=> puts everything up until the character "2"
+.. *2
+=> puts it twice
+.. ,2
+=> then puts "2"
+
+# 2nd Line
+
+puts <<2*2,2
+=> This is after the "puts<<2" line and is therefore a string.
+   It is an exact copy of our code that is going to be executed (1st line).
+   And due to the "*2" in the 1st line, it is going to be puts'ed twice,
+    which gives us an output of:
+
+   puts <<2*2,2
+   puts <<2*2,2
+
+# 3rd Line
+
+2
+=> The first 2 in the 1st line is this 2, it signifies the end of what "puts" needs to puts.
+   The last 2 in the 1st line is the one that is printed to the console to give us the final output:
+
+   puts <<2*2,2
+   puts <<2*2,2
+   2
+
+   Which is the source code in its entirety.
